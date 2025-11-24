@@ -5,14 +5,46 @@
     <title>Meme Generator</title>
   </head>
   <body>
-
     <div class="topheader">
       <h1>MEME GENERATOR</h1>
+    </div>
     <div class="bottomheader">
-      <p>To generate a meme, insert your funny text along with an image url. Then click the generate button and a funny combination will appear.</p>
+      <p>
+        To generate a meme, insert your funny text along with an image url. Then
+        click the generate button and a funny combination will appear.
+      </p>
     </div>
 
-    <button class ="generate">Generate</button>
+    <form action="" method="get" class="form-example">
+      <div class="form-example">
+        <label for="toptext">Top Text: </label>
+
+        <input
+          type="text"
+          name="toptext"
+          id="toptext"
+          class="textbar"
+          required
+        />
+      </div>
+
+      <div class="form-example">
+        <label for="bottomtext">Bottom Text: </label>
+
+        <input
+          type="text"
+          name="bottomtext"
+          id="bottomtext"
+          class="textbar"
+          required
+        />
+      </div>
+
+      <div class="form-example">
+        <input type="submit" value="Generate!" class="generatebutton" />
+      </div>
+    </form>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

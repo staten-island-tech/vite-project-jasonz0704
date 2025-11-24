@@ -16,3 +16,21 @@
 body {
   background-color: rgb(255, 218, 218);
 }
+
+.form-example {
+  text-align: left;
+  font-size: 30px;
+  margin: 40px;
+}
+
+input {
+  height: 40px;
+}
+
+.textbar {
+  width: 600px;
+}
+
+.generatebutton {
+  height: 50px;
+}
