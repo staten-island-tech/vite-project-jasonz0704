@@ -15,50 +15,52 @@
       </p>
     </div>
 
-    <form id="memeform">
-      <div class="form-example">
-        <label for="toptext">Top Text: </label>
+    <div class="flexview">
+      <form id="memeform" class="memeform">
+        <div class="form-example">
+          <label for="toptext">Top Text: </label>
 
-        <input
-          type="text"
-          name="toptext"
-          id="toptext"
-          class="textbar"
-          required
-        />
-      </div>
+          <input
+            type="text"
+            name="toptext"
+            id="toptext"
+            class="textbar"
+            required
+          />
+        </div>
 
-      <div class="form-example">
-        <label for="bottomtext">Bottom Text: </label>
+        <div class="form-example">
+          <label for="bottomtext">Bottom Text: </label>
 
-        <input
-          type="text"
-          name="bottomtext"
-          id="bottomtext"
-          class="textbar"
-          required
-        />
-      </div>
+          <input
+            type="text"
+            name="bottomtext"
+            id="bottomtext"
+            class="textbar"
+            required
+          />
+        </div>
 
-      <div class="form-example">
-        <label for="imageurl">Image URL: </label>
+        <div class="form-example">
+          <label for="imageurl">Image URL: </label>
 
-        <input
-          type="text"
-          name="imageurl"
-          id="imageurl"
-          class="textbar"
-          required
-        />
-      </div>
+          <input
+            type="text"
+            name="imageurl"
+            id="imageurl"
+            class="textbar"
+            required
+          />
+        </div>
 
-      <div class="form-example">
-        <input type="submit" value="Generate!" class="generatebutton" />
-      </div>
-    </form>
+        <div class="form-example">
+          <input type="submit" value="Generate!" class="generatebutton" />
+        </div>
+      </form>
 
-    <canvas class="memecanvas"></canvas>
-
+      <canvas class="memecanvas" id="memecanvas"></canvas>
+    </div>
+    <img src="./images/" />
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
