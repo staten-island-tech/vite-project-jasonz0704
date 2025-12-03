@@ -10,7 +10,7 @@
     </div>
     <div class="bottomheader">
       <p>
-        To generate a meme, insert your funny text along with an image url. Then
+        To generate a meme, insert your funny text along with an image URL. Then
         click the generate button and a funny combination will appear.
       </p>
     </div>
@@ -56,12 +56,20 @@
         </div>
 
         <div class="form-example">
-          <input type="submit" value="Generate!" class="generatebutton" />
+          <input
+            type="submit"
+            value="Generate!"
+            class="generatebutton"
+            id="generatebutton"
+          />
         </div>
       </form>
 
       <canvas class="memecanvas" id="memecanvas"></canvas>
     </div>
+
+    <div class="presetimages" id="presetimages"></div>
+
     <img src="./images/" />
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -1,5 +1,6 @@
 import "./style.css";
 
+//prevent the refresh
 document.getElementById("memeform").addEventListener("submit", function (e) {
   e.preventDefault();
 });
@@ -8,15 +9,22 @@ const memeform = document.getElementById("memeform");
 const topinput = document.getElementById("toptext");
 const bottominput = document.getElementById("bottomtext");
 const urlinput = document.getElementById("imageurl");
-const memecanvas = document.getElementById("memecanvas");
-const ctx = memecanvas.getContext("2d");
 
+//when form submits generate meme
 memeform.addEventListener("submit", (e) => {
-  e.preventDefault();
   generatememe();
 });
 
-function generateMeme() {
-  const toptext = topinput.value;
+function generatememe() {
+  /* const toptext = topinput.value;
   const bottomtext = bottominput.value;
-  const imageurl = urlinput.value;
+  const imageurl = urlinput.value; */
+  const memecanvas = document.querySelector(".memecanvas");
+  memecanvas.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="toptext">${topinput}</div>
+    <img class="image" src="${urlinput}">
+    <div class="bottomtext">${bottominput}</div>`
+  );
+  console.log("memegenerated");
+}
