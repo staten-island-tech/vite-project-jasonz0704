@@ -18,10 +18,10 @@
     <div class="flexview">
       <form id="memeform" class="memeform">
         <div class="form-example">
-          <label for="toptext" id="toptext">Top Text: </label>
+
+          <label>Top Text: </label>
           <input
             type="text"
-            name="toptext"
             id="toptext"
             class="textbar"
             required
@@ -29,11 +29,10 @@
         </div>
 
         <div class="form-example">
-          <label for="bottomtext" id="bottomtext">Bottom Text: </label>
+          <label>Bottom Text: </label>
 
           <input
             type="text"
-            name="bottomtext"
             id="bottomtext"
             class="textbar"
             required
@@ -41,17 +40,16 @@
         </div>
 
         <div class="form-example">
-          <label for="imageurl" id="imageurl">Image URL: </label>
+          <label>Image URL: </label>
 
           <input
             type="url"
-            name="url"
-            id="url"
+            id="imageurl"
+            class="textbar"
             placeholder="https://example.com"
             pattern="https://.*"
             size="30"
             required
-            class="textbar"
           />
         </div>
 
@@ -64,12 +62,14 @@
           />
         </div>
       </form>
-      <div class="memecanvas" id="memecanvas"></div>
+      <img class="memeimage" id="memeimage" src=""></img>
     </div>
 
-    <div class="presetimages" id="presetimages"></div>
+    <div class="presetimages" id="presetimages">
+      <!-- <img src="./images/" /> -->
+    </div>
 
-    <img src="./images/" />
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

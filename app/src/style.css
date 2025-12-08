@@ -49,15 +49,6 @@ label {
   margin-bottom: 10px;
 }
 
-.canvas {
-  width: 500px;
-  height: 500px;
-  margin: 40px;
-  border: 5px solid black;
-  border-radius: 10px;
-  background-color: lightgray;
-}
-
 .flexview {
   display: flex;
   align-items: center;

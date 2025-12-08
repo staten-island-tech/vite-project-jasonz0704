@@ -5,9 +5,13 @@ const topinput = document.getElementById("toptext");
 const bottominput = document.getElementById("bottomtext");
 const urlinput = document.getElementById("imageurl");
 
+const toptext = document.getElementById("toptext");
+const bottomtext = document.getElementById("bottomtext");
+const memeimage = document.getElementById("memeimage");
+
 //prevent the refresh
 
-memeform.getElementById("memeform").addEventListener("submit", function (e) {
+memeform.addEventListener("submit", function (e) {
   e.preventDefault();
 
   toptext.textContent = topinput.value;
