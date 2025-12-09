@@ -22,7 +22,7 @@
           <label>Top Text: </label>
           <input
             type="text"
-            id="toptext"
+            id="topinput"
             class="textbar"
             required
           />
@@ -33,7 +33,7 @@
 
           <input
             type="text"
-            id="bottomtext"
+            id="bottominput"
             class="textbar"
             required
           />
@@ -44,7 +44,7 @@
 
           <input
             type="url"
-            id="imageurl"
+            id="urlinput"
             class="textbar"
             placeholder="https://example.com"
             pattern="https://.*"
@@ -62,11 +62,15 @@
           />
         </div>
       </form>
+      <div class="display">
+        <h2 class="toptext" id="toptext"></h2>
       <img class="memeimage" id="memeimage" src=""></img>
+        <h2 class="bottomtext" id="bottomtext"></h2>
+      </div>
     </div>
 
     <div class="presetimages" id="presetimages">
-      <!-- <img src="./images/" /> -->
+    <img src="./images/" />
     </div>
 
     
