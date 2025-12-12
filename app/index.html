@@ -4,10 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Generator</title>
   </head>
-  <body class="cool">
+  <body class="dark">
       
-    
-    <button class="btn">Click Me</button>
+    <button class="themechanger">Change Theme</button>
   </div>
     </div>
 
@@ -25,7 +24,7 @@
       <form id="memeform" class="memeform">
         <div class="form-example">
 
-          <label>Top Text: </label>
+          <label class="label">Top Text: </label>
           <input
             type="text"
             id="topinput"
@@ -35,7 +34,7 @@
         </div>
 
         <div class="form-example">
-          <label>Bottom Text: </label>
+          <label class="label">Bottom Text: </label>
 
           <input
             type="text"
@@ -46,7 +45,7 @@
         </div>
 
         <div class="form-example">
-          <label>Image URL: </label>
+          <label class="label">Image URL: </label>
 
           <input
             type="url"
@@ -70,13 +69,18 @@
       </form>
       <div class="display">
         <h2 class="toptext" id="toptext"></h2>
-      <img class="memeimage" id="memeimage" src="./images/filler.png"></img>
+      <img class="memeimage" id="memeimage" src="./public/images/filler.png"></img>
         <h2 class="bottomtext" id="bottomtext"></h2>
       </div>
     </div>
 
     <div class="presetimages" id="presetimages">
-    <img src="./images/" />
+    
+    
+    
+    <img src="./public/images/" />
+   
+
     </div>
     
     <script type="module" src="/src/main.js"></script>

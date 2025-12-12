@@ -1,26 +1,30 @@
 :root {
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
+  --dark-blue: #00244ef5;
+  --gold: #fdda3cd8;
   --light-red: #f87171;
-  --dark-red: #dc2626;
+  --light-pink: #ffc2c2;
 
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --light-gold: #fffbd3;
+  --black: #380e0e;
+
+  --hover-red: #ff5353;
+  --hover-gold: #ffd82c;
 }
 
-.cool {
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+.dark {
+  --primary: var(--dark-blue);
+  --secondary: var(--gold);
+
+  --text: var(--light-gold);
+  --button: var(--hover-gold);
 }
 
-.warm {
-  --primary: var(--light-red);
-  --secondary: var(--dark-red);
-}
+.light {
+  --primary: var(--light-pink);
+  --secondary: var(--light-red);
 
-.color {
-  background-color: var(--secondary);
-  height: 90vh;
+  --text: var(--black);
+  --button: var(--hover-red);
 }
 
 .topheader {
@@ -28,15 +32,17 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 30px;
+  color: var(--text);
 }
 
 .bottomheader {
   font-size: 25px;
   text-align: center;
+  color: var(--text);
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .memeform {
@@ -51,6 +57,10 @@ body {
   width: 650px;
 }
 
+.label {
+  color: var(--text);
+}
+
 .textbar {
   width: 600px;
   height: 50px;
@@ -62,9 +72,11 @@ body {
   background-color: green;
   border-radius: 10px;
   color: white;
+  background-color: var(--secondary);
 }
+
 .generatebutton:hover {
-  background-color: darkgreen;
+  background-color: var(--button);
 }
 
 label {
@@ -93,8 +105,6 @@ label {
   margin: 50px;
   max-width: 800px;
   max-height: 1000px;
-  min-width: 400px;
-  min-height: 400px;
 }
 
 .memeimage {
@@ -109,4 +119,15 @@ label {
   font-size: 40px;
   color: white;
   max-width: 800px;
+}
+
+.themechanger {
+  background-color: var(--secondary);
+  color: var(--text);
+  height: 40px;
+  border-radius: 5px;
+}
+
+.themechanger:hover {
+  background-color: var(--button);
 }

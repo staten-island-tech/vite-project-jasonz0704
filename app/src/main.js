@@ -21,12 +21,15 @@ memeform.addEventListener("submit", function (e) {
   memeimage.src = urlinput.value;
 });
 
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
+//change the theme
+document.querySelector(".themechanger").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
   } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
   }
 });
+
+//preset images
