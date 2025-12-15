@@ -5,10 +5,13 @@
   --light-pink: #ffc2c2;
 
   --light-gold: #fffbd3;
-  --black: #380e0e;
+  --not-black: #380e0e;
 
   --hover-red: #ff5353;
   --hover-gold: #ffd82c;
+
+  --white: #ffffff;
+  --black: #000000;
 }
 
 .dark {
@@ -17,14 +20,20 @@
 
   --text: var(--light-gold);
   --button: var(--hover-gold);
+
+  --canvascolor: var(--black);
+  --canvastext: var(--white);
 }
 
 .light {
   --primary: var(--light-pink);
   --secondary: var(--light-red);
 
-  --text: var(--black);
+  --text: var(--not-black);
   --button: var(--hover-red);
+
+  --canvascolor: var(--white);
+  --canvastext: var(--black);
 }
 
 .topheader {
@@ -98,9 +107,8 @@ label {
   flex-direction: column;
   justify-content: center;
 
-  border-color: black;
   border: 10px;
-  background-color: black;
+  background-color: var(--canvascolor);
   border-radius: 10px;
   margin: 50px;
   max-width: 800px;
@@ -117,7 +125,7 @@ label {
 .toptext,
 .bottomtext {
   font-size: 40px;
-  color: white;
+  color: var(--canvastext);
   max-width: 800px;
 }
 
@@ -130,4 +138,10 @@ label {
 
 .themechanger:hover {
   background-color: var(--button);
+}
+
+.presetimages {
+  background-color: black;
+  height: 200px;
+  width: 300px;
 }
