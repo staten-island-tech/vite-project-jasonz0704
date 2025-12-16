@@ -36,31 +36,24 @@ document.querySelector(".themechanger").addEventListener("click", function () {
 
 //preset images
 
-const preset = [
-  { name: "laughing cat",
-    image: "./public/images/catlaugh.jpg" },
-  { name: "staring cat",
-    image: "./public/images/catstare.webp" },
-  { name: "weirded out cat",
-    image: "./public/images/catweird.jpg" },
-  { name: "monkey ragebait",
-    image: "./public/images/ragebait.jpeg" },
-  { name: "shocked dog",
-    image: "./public/images/shockeddog.jpg" },
-  { name: "staring cat",
-    image: "./public/images/catstare.webp" },
+const presetimages = [
+  { name: "laughing cat", image: "./public/images/catlaugh.jpg" },
+  { name: "staring cat", image: "./public/images/catstare.webp" },
+  { name: "weirded out cat", image: "./public/images/catweird.jpg" },
+  { name: "monkey ragebait", image: "./public/images/ragebait.jpeg" },
+  { name: "shocked dog", image: "./public/images/shockeddog.jpg" },
+  { name: "staring cat", image: "./public/images/catstare.webp" },
 ];
 
 function inject(presetimages) {
-  const preset = document.querySelector(".preset");
-  container.insertAdjacentHTML(
+  const presetbox = document.querySelector(".presetbox");
+  presetbox.insertAdjacentHTML(
     "afterbegin",
     `<div class="presetcard">
-        <h2 class= "name">${item.name}</h2>
-        <image class= "image" src=${item.image} alt=${item.name}>
-        <div class= "price">$${item.price}</div>
-        <button class= "cartbutton">Add to Cart</button>
+        <h2 class= "presetimagename">${presetimages.name}</h2>
+        <image class= "presetimageimage" src=${presetimages.image}>
+        <button class= "presetimagebutton">Use Image</button>
         </div>`
   );
 }
-item.forEach((item) => inject(item));
+presetimages.forEach((presetimages) => inject(presetimages));

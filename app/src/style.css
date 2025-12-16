@@ -140,8 +140,10 @@ label {
   background-color: var(--button);
 }
 
-.presetimages {
-  background-color: black;
+.presetbox {
+  flex-wrap: wrap;
+}
+.presetimageimage {
   height: 200px;
   width: 300px;
 }
