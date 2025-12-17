@@ -140,10 +140,45 @@ label {
   background-color: var(--button);
 }
 
+.presetheader {
+  color: var(--text);
+  font-size: 30px;
+}
 .presetbox {
   flex-wrap: wrap;
+  display: flex;
+}
+
+.presetcard {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 10px;
+  background: var(--secondary);
+  max-width: 350px;
+  border-radius: 10px;
+}
+.presetimagename {
+  font-size: 25px;
+  color: var(--text);
 }
 .presetimageimage {
   height: 200px;
   width: 300px;
+}
+
+.presetimagebutton {
+  background-color: var(--secondary);
+  width: 100px;
+  margin: 15px;
+  font-size: 20px;
+  color: var(--text);
+  border-radius: 5px;
+}
+
+.presetimagebutton:hover {
+  background-color: var(--button);
 }
