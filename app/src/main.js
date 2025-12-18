@@ -42,7 +42,6 @@ const presetimages = [
   { name: "weirded out cat", image: "/images/catweird.jpg" },
   { name: "monkey ragebait", image: "/images/ragebait.jpeg" },
   { name: "shocked dog", image: "/images/shockeddog.jpg" },
-  { name: "staring cat", image: "/images/catstare.webp" },
 ];
 
 function inject(presetimages) {
@@ -50,17 +49,30 @@ function inject(presetimages) {
   presetbox.insertAdjacentHTML(
     "afterbegin",
     `<div class="presetcard">
-        <h2 class= "presetimagename" " >${presetimages.name}</h2>
-        <image class= "presetimageimage" id="presetimageimage" src=${presetimages.image}>
+        <h2 class= "presetimagename">${presetimages.name}</h2>
+        <image class= "presetimageimage" id="presetimageimage" data-class="presetimageimage" src=${presetimages.image}>
         <button class= "presetimagebutton" id="presetimagebutton">Use Image</button>
         </div>`
   );
 }
 presetimages.forEach((presetimages) => inject(presetimages));
 
-const presetimageimage = document.getElementById("presetimageimage");
-const presetimagebutton = document.querySelectorAll("presetimagebutton");
+/* const presetimagebuttons = document.querySelectorAll(".presetimagebutton");
 
-presetimagebutton.addEventListener("click", function () {
-  memeimage.src = presetimageimage.src;
+presetimagebuttons.forEach((presetimagebutton) => {
+  presetimagebutton.addEventListener("click", function () {
+    const presetimageimage =
+      presetimagebutton.target.closest(".presetimageimage");
+    memeimage.src = presetimageimage.src;
+    console.log("hi");
+  });
+});
+ */
+
+document.addEventListener("click", function (data) {
+  if (data.target.classList.contains("presetimagebutton")) {
+    const presetimageimage = data.target.closest(".presetcard");
+    const source = presetimageimage.querySelector(".presetimageimage").src;
+    memeimage.src = source;
+  }
 });
